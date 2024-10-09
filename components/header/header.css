@@ -1,0 +1,29 @@
+@import url('/css/main.css');
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content:  space-between;
+}
+header .logo{
+    width: 110px;
+    margin: 20px 0;
+}
+header nav ul{
+    display: flex;
+
+}
+ul li{
+    margin: 0 0 0 40px;
+    list-style: none;
+}
+
+ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: var(--fuente-1);
+    font-weight: lighter;
+}
+ul li a:hover{
+    color: var(--fuente-2);
+}

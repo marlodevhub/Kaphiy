@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Kaphiy Perú | Cafetería</title>
+        <link rel="stylesheet" href="styles/Home.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="content">
+            <div id="header-componente"></div>
+        </div>
+        <div id="slider-componente"></div>
+
+        <!--Scripts-->
+        <script>
+            fetch("components/header/header.html")
+                .then((response) => response.text())
+                .then((data) => {
+                    document.getElementById("header-componente").innerHTML =
+                        data;
+                });
+
+            // Cargar el slider
+            fetch("components/slider/slider.html")
+                .then((response) => response.text())
+                .then((data) => {
+                    document.getElementById("slider-componente").innerHTML =
+                        data;
+
+                    const script = document.createElement("script");
+                    script.src = "components/slider/slider.js"; // Verifica la ruta aquí
+                    document.body.appendChild(script);
+                })
+                .catch((error) =>
+                    console.error("Error cargando el slider:", error)
+                );
+        </script>
+    </body>
+</html>
