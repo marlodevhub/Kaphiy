@@ -1,11 +1,69 @@
-@import url('/css/normalize.css');
+@import url("/css/normalize.css");
 
 :root {
-    --fuente-1: #1D1A1A;
-    --fuente-2: #A38C6D;
+    --bg-black: #000000;
+    --bg-primary-dark: #1d1a1a;
+    --bg-primary-light: #a38c6d;
+    --bg-white: #ffffff;
+    --bg-grey-1: #f5f5f5;
+    --bg-grey-2: #f5f5f5;
+    --bg-grey-3: #f5f5f5;
+
+    --tx-white: #ffffff;
+    --tx-primary-dark: #1d1a1a;
+    --tx-primary-light: #c5af91;
+
+    --tx-grey-light: #999999;
+    --tx-grey-medium: #666666;
+    --tx-grey-dark: #333333;
+
+    --bg-grey-common: #dcdcdc;
+    --tx-grey-common: #333333;
 }
 
-body{
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+body {
     background-color: #fff;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* Globales */
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: var(--color_blanco);
+}
+
+h1 {
+    font-size: 4.8rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3.2rem;
+}
+
+h4 {
+    font-size: 2.8rem;
+}
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
 }

@@ -1,0 +1,100 @@
+@import url("/css/main.css");
+
+.content {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.fondo__footer {
+    background: var(--bg-primary-dark);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10rem 0;
+}
+.footer__logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer__logo--img {
+    width: 12rem;
+}
+
+.footer__pages {
+    list-style: none;
+    padding: 0;
+}
+
+.footer__pages-item {
+    margin-bottom: 1rem;
+}
+.footer__pages-link {
+    color: var(--tx-white);
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    text-decoration: none;
+    font-weight: 300;
+}
+.footer__pages-link:hover {
+    color: var(--tx-primary-light);
+}
+
+.footer__contacto-titulo {
+    color: var(--bg-white);
+    font-weight: 400;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+
+.footer__contact-list {
+    list-style: none;
+}
+
+.footer__contact-item {
+    color: var(--tx-white);
+    font-style: normal;
+    margin-top: 1rem;
+    font-weight: 300;
+}
+
+.footer__contact-link {
+    font-style: normal;
+    color: var(--tx-white);
+}
+
+.footer__suscribir-titulo {
+    color: var(--tx-white);
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.footer__subscribe-form {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer__subscribe-input {
+    height: 4rem;
+    width: 30rem;
+    border-radius: 1rem;
+    border: none;
+    padding: 0 1rem;
+}
+.footer__subscribe-input:focus {
+    outline: none;
+}
+.footer__subscribe-input::placeholder {
+    font-size: 1.4rem;
+}
+
+.footer__subscribe-button {
+    background: var(--bg-primary-light);
+    padding: 1rem 4rem;
+    border: none;
+    border-radius: 1rem;
+    color: var(--tx-white);
+}
