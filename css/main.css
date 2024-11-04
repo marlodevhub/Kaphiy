@@ -1,16 +1,20 @@
 @import url("/css/normalize.css");
 
 :root {
+    /* background */
+    --bg-white: #fff;
     --bg-black: #000000;
     --bg-primary-dark: #1d1a1a;
-    --bg-primary-light: #a38c6d;
-    --bg-white: #ffffff;
+    --bg-primary-chocolate: #695757;
+    --bg-primary-beige: #c5af91;
+
     --bg-grey-1: #f5f5f5;
     --bg-grey-2: #f5f5f5;
     --bg-grey-3: #f5f5f5;
 
     --tx-white: #ffffff;
     --tx-primary-dark: #1d1a1a;
+    --tx-primary-chocolate: #695757;
     --tx-primary-light: #c5af91;
 
     --tx-grey-light: #999999;
@@ -65,5 +69,10 @@ a {
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
+}
+
+.container {
+    max-width: 130rem;
+    margin: 0 auto;
 }

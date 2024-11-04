@@ -1,10 +1,4 @@
-@import url("/css/main.css");
-
-.content {
-    max-width: 1300px;
-    margin: 0 auto;
-}
-.fondo__footer {
+.footer-wrapper {
     background: var(--bg-primary-dark);
 }
 
