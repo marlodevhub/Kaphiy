@@ -1,6 +1,7 @@
 @import url("/css/normalize.css");
 
 :root {
+<<<<<<< HEAD
     /* background */
     --bg-white: #fff;
     --bg-black: #000000;
@@ -23,6 +24,10 @@
 
     --bg-grey-common: #dcdcdc;
     --tx-grey-common: #333333;
+=======
+    --fuente-1: #1D1A1A;
+    
+>>>>>>> 21ea653e3ed1c85507c4a8d86fcdc51160a633cf
 }
 
 html {
