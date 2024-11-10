@@ -47,6 +47,16 @@ body {
     font-size: 1.6rem;
     line-height: 1.5;
     color: var(--color_blanco);
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
 }
 
 h1 {

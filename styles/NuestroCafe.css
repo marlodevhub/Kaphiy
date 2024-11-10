@@ -1,0 +1,187 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main {
+    padding-top: 60px; /* Ajusta según el alto total de tu header */
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url(/assets/img/img-content/encabezado.png) center bottom no-repeat;
+    background-size: cover;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+}
+
+.main-content {
+    text-align: center;
+}
+
+.main-content h1 {
+    font-size: 60px;
+    line-height: 80px;
+    color: #ffffff;
+    margin-bottom: 35px;
+}
+
+/* Fondo gris para toda la sección */
+.coffee {
+    background-color: #f0f0f0; /* Fondo gris */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Estilos para cada grupo de contenido */
+.coffee-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: center; /* Alinea los elementos en el centro */
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el contenedor de medios (imagen/video) */
+.media-wrapper {
+    width: 500px;
+    height: auto;
+    padding: 45px;
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeeee; /* Fondo gris claro */
+    border-radius: 8px;
+    overflow: hidden; /* Asegura que el contenido no exceda los límites */
+    position: relative; /* Necesario para posicionar las flechas */
+}
+
+.media-wrapper img,
+.media-wrapper video {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Botón para alternar entre imagen y video */
+#toggle-media-btn {
+    margin-top: 15px;
+    padding: 8px 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#toggle-media-btn:hover {
+    background-color: #555;
+}
+
+/* Estilos para el texto */
+.coffee-text {
+    flex: 1;
+}
+
+.coffee-text h2 {
+    font-size: 35px;
+    margin-top: 70px;
+    margin-bottom: 40px; /* Ajusta el valor según lo necesites */
+}
+
+.coffe-text p {
+    margin-top: 20px;
+}
+
+/* Indentación de la lista */
+.coffee-text ul {
+    list-style-type: none; /* Elimina las viñetas predeterminadas */
+    padding-left: 40px; /* Ajusta según la indentación deseada */
+}
+/* Uso de íconos personalizados con pseudo-elementos */
+.coffee-text ul li {
+    position: relative;
+    font-size: 14px; /* Ajusta el tamaño según prefieras */
+    padding-left: 25px; /* Espacio para el ícono */
+    margin-top: 15px; /* Ajusta este valor según la cantidad de espacio que quieras */
+    margin-bottom: 10px; /* Espacio entre elementos */
+}
+
+.coffee-text ul li::before {
+    content: ">"; /* Puedes cambiar esto por otro carácter o emoji */
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #333; /* Color de la viñeta */
+    font-size: 1.8em; /* Tamaño de la viñeta */
+}
+
+/* Opcional: Cambiar el color de las viñetas al pasar el mouse */
+.coffee-text ul li:hover::before {
+    color: #999;
+}
+
+.arrow {
+    background-color: #333; /* Color de fondo de la flecha */
+    color: white; /* Color de la flecha */
+    border: none; /* Sin borde */
+    font-size: 20px; /* Ajusta el tamaño de la flecha */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    border-radius: 50%; /* Hace que el botón sea circular */
+    width: 40px; /* Ajusta el ancho del círculo */
+    height: 40px; /* Ajusta la altura del círculo */
+    display: flex; /* Flexbox para centrar el contenido */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    position: absolute; /* Posición absoluta para que las flechas se coloquen dentro del contenedor */
+    top: 50%; /* Centrar verticalmente dentro del contenedor */
+    transform: translateY(-50%); /* Ajustar para que se centren correctamente */
+    z-index: 10; /* Asegurar que las flechas estén por encima del contenido */
+    transition: background-color 0.3s; /* Efecto de transición al cambiar de color */
+}
+
+.left-arrow {
+    left: 10px; /* Espacio desde la izquierda del contenedor */
+}
+
+.right-arrow {
+    right: 10px; /* Espacio desde la derecha del contenedor */
+}
+
+.arrow:hover {
+    background-color: #555; /* Cambia el color al pasar el mouse */
+}
+
+.slider-container {
+    width: 100%;
+    height: 50vh; /* Ajusta el tamaño como necesites */
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+
+.slider {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    animation: slideAnimation 12s infinite; /* Cambia cada 12 segundos */
+    border-radius: 10px;
+}
+
+/* Keyframes para cambiar entre las imágenes y el video */
+@keyframes slideAnimation {
+    0% {
+        background-image: url("/assets/img/img-content/empaque.png");
+    }
+    33% {
+        background-image: url("/assets/img/img-content/cafe_video.mp4"); /* Si es un video, usa una imagen o gif como previsualización */
+    }
+    66% {
+        background-image: url("/assets/img/img-content/cappuccino.png");
+    }
+    100% {
+        background-image: url("/assets/img/img-content/empaque.png");
+    }
+}

@@ -1,17 +1,44 @@
 <div class="header-wrapper">
     <div class="header container">
-        <div class="logo">
+        <div class="header__logo">
             <img src="/assets/img/logos/LogoHorizontal.png" alt="Logo Kaphiy" />
         </div>
 
-        <nav>
-            <ul>
-                <li><a href="#">inicio</a></li>
-                <li><a href="#">menú</a></li>
-                <li><a href="#">nuestro café</a></li>
-                <li><a href="#">blog</a></li>
-                <li><a href="#">sobre nosotros</a></li>
+        <nav class="header__nav">
+            <ul class="header__nav-links">
+                <li class="header__nav-link">
+                    <a href="/index.html">inicio</a>
+                </li>
+                <li class="header__nav-link">
+                    <a href="/pages/Menu.html">menú</a>
+                </li>
+                <li class="header__nav-link">
+                    <a href="/pages/NuestroCafe.html">nuestro café</a>
+                </li>
+                <li class="header__nav-link">
+                    <a href="/pages/Blog.html">blog</a>
+                </li>
+                <li class="header__nav-link">
+                    <a href="/pages/Nosotros.html">sobre nosotros</a>
+                </li>
             </ul>
+            <div class="header__nav-user">
+                <button class="header__user-button header__user-button--login">
+                    <span class="header__user-icon">
+                        <img
+                            src="/assets/img/img-content/nabvar-user.svg"
+                            alt="Icono de usuario"
+                        />
+                    </span>
+                    Iniciar sesión
+                </button>
+
+                <button
+                    class="header__user-button header__user-button--register"
+                >
+                    Registrarse
+                </button>
+            </div>
         </nav>
     </div>
 </div>

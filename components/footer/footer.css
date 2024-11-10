@@ -92,3 +92,11 @@
     border-radius: 1rem;
     color: var(--tx-white);
 }
+.redes__sociales {
+    display: flex;
+    gap: 1.3rem;
+}
+
+.footer__subscribe-button {
+    background-color: #a38c6d;
+}

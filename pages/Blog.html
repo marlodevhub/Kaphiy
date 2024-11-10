@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../styles/Home.css" />
+        <link rel="stylesheet" href="../components/footer/footer.css" />
+        <link rel="stylesheet" href="../components/header/header.css" />
+        <link rel="stylesheet" href="../styles/blog.css" />
+    </head>
+
+    <body>
+        <header>
+            <div id="header"></div>
+        </header>
+        <header class="banner">
+            <div class="banner-img">
+                <div class="banner-contentet">
+                    <h1>BLOG</h1>
+                </div>
+            </div>
+        </header>
+
+        <section class="introduccion-container">
+            <div class="introduccion-content">
+                <h3>
+                    Descubre los eventos más emocionantes que tenemos preparados
+                    en nuestra cafetería. <br />
+                    Mantente al día con las últimas actividades y disfruta de un
+                    ambiente acogedor, donde <br />siempre hay algo nuevo que
+                    saborear y aprender.
+                </h3>
+            </div>
+        </section>
+
+        <section class="blog-wapper">
+            <div class="blog container">
+                <div class="blog-titulo">
+                    <h2>Actualizaciones recientes</h2>
+                </div>
+
+                <div class="blog-content">
+                    <div class="blog-content-fila">
+                        <div class="blog-item">
+                            <img
+                                class="blog-item-img"
+                                src="/assets/img/Img-Blog/blog1.png"
+                                alt=""
+                            />
+                            <h4>
+                                Thank You for Celebrating Kyoto <br />
+                                Stand’s 8th Anniversary With Us!
+                            </h4>
+                            <h5>6/11/2024</h5>
+                        </div>
+
+                        <div class="blog-item">
+                            <img
+                                class="blog-item-img"
+                                src="/assets/img/Img-Blog/blog2.png"
+                                alt=""
+                            />
+                            <h4>
+                                Thank You for Celebrating Kyoto <br />
+                                Stand’s 8th Anniversary With Us!
+                            </h4>
+                            <h5>6/11/2024</h5>
+                        </div>
+
+                        <div class="blog-item">
+                            <img
+                                class="blog-item-img"
+                                src="/assets/img/Img-Blog/blog3.png"
+                                alt=""
+                            />
+                            <h4>
+                                Thank You for Celebrating Kyoto <br />
+                                Stand’s 8th Anniversary With Us!
+                            </h4>
+                            <h5>6/11/2024</h5>
+                        </div>
+                    </div>
+
+                    <div class="blog-content-fila">
+                        <div class="blog-item">
+                            <img
+                                class="blog-item-img"
+                                src="/assets/img/Img-Blog/blog4.png"
+                                alt=""
+                            />
+                            <h4>
+                                Thank You for Celebrating Kyoto <br />
+                                Stand’s 8th Anniversary With Us!
+                            </h4>
+                            <h5>6/11/2024</h5>
+                        </div>
+
+                        <div class="blog-item">
+                            <img
+                                class="blog-item-img"
+                                src="/assets/img/Img-Blog/blog5.png"
+                                alt=""
+                            />
+                            <h4>
+                                Thank You for Celebrating Kyoto <br />
+                                Stand’s 8th Anniversary With Us!
+                            </h4>
+                            <h5>6/11/2024</h5>
+                        </div>
+
+                        <div class="blog-item">
+                            <img
+                                class="blog-item-img"
+                                src="/assets/img/Img-Blog/blog6.png"
+                                alt=""
+                            />
+                            <h4>
+                                Thank You for Celebrating Kyoto <br />
+                                Stand’s 8th Anniversary With Us!
+                            </h4>
+                            <h5>6/11/2024</h5>
+                        </div>
+                    </div>
+
+                    <div class="blog-content-fila">
+                        <div class="blog-item">
+                            <img
+                                class="blog-item-img"
+                                src="/assets/img/Img-Blog/blog7.png"
+                                alt=""
+                            />
+                            <h4>
+                                Thank You for Celebrating Kyoto <br />
+                                Stand’s 8th Anniversary With Us!
+                            </h4>
+                            <h5>6/11/2024</h5>
+                        </div>
+
+                        <div class="blog-item">
+                            <img
+                                class="blog-item-img"
+                                src="/assets/img/Img-Blog/blog8.png"
+                                alt=""
+                            />
+                            <h4>
+                                Thank You for Celebrating Kyoto <br />
+                                Stand’s 8th Anniversary With Us!
+                            </h4>
+                            <h5>6/11/2024</h5>
+                        </div>
+
+                        <div class="blog-item">
+                            <img
+                                class="blog-item-img"
+                                src="/assets/img/Img-Blog/blog9.png"
+                                alt=""
+                            />
+                            <h4>
+                                Thank You for Celebrating Kyoto <br />
+                                Stand’s 8th Anniversary With Us!
+                            </h4>
+                            <h5>6/11/2024</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div id="footer"></div>
+        </footer>
+
+        <script>
+            fetch("../components/header/header.html")
+                .then((response) => {
+                    if (!response.ok) {
+                        throw new Error(
+                            "Oh! Error al cargar el header: " +
+                                response.statusText
+                        );
+                    }
+                    return response.text();
+                })
+                .then((data) => {
+                    document.getElementById("header").innerHTML = data;
+                })
+                .catch((error) => {
+                    console.error(
+                        "Hubo un problema con la solicitud Fetch:",
+                        error
+                    );
+                });
+        </script>
+
+        <!-- ScriptScript de componentes -->
+        <script>
+            fetch("../components/footer/footer.html")
+                .then((response) => {
+                    if (!response.ok) {
+                        throw new Error(
+                            "Oh! Error al cargar el footer: " +
+                                response.statusText
+                        );
+                    }
+                    return response.text();
+                })
+                .then((data) => {
+                    document.getElementById("footer").innerHTML = data;
+                })
+                .catch((error) => {
+                    console.error(
+                        "Hubo un problema con la solicitud Fetch:",
+                        error
+                    );
+                });
+        </script>
+    </body>
+</html>

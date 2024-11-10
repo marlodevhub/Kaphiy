@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Kaphiy Perú | Cafetería</title>
+        <link rel="stylesheet" href="/styles/Menu.css" />
+
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <main>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img
+                            src="/assets/img/img-content/img-locales-1.png"
+                            alt=""
+                        />
+                    </div>
+                    <div class="swiper-slide">
+                        <img
+                            src="/assets/img/img-content/img-locales-2.png"
+                            alt=""
+                        />
+                    </div>
+                    <div class="swiper-slide">
+                        <img
+                            src="/assets/img/img-content/img-locales-3.png"
+                            alt=""
+                        />
+                    </div>
+                    ...
+                </div>
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </main>
+
+        <!--Copiar los 2 scripts-->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper(".swiper", {
+                // Optional parameters
+                direction: "horizontal",
+                loop: true,
+                // autoplay: {
+                //     delay: 4000,
+                // },
+
+                // If we need pagination
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+
+                // Navigation arrows
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+
+                // And if we need scrollbar
+                // scrollbar: {
+                //     el: ".swiper-scrollbar",
+                // },
+            });
+        </script>
+    </body>
+</html>

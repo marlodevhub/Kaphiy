@@ -3,31 +3,64 @@
     position: fixed;
     width: 100%;
     backdrop-filter: blur(15px);
+    z-index: 120;
 }
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.header .logo {
+.header__logo {
     width: 110px;
     margin: 20px 0;
 }
-.header nav ul {
+
+.header__nav {
+    display: flex;
+    align-items: center;
+}
+
+.header__nav-links {
     display: flex;
 }
-.header nav ul li {
+.header__nav-link {
     margin: 0 0 0 40px;
     list-style: none;
 }
 
-.header nav ul li a {
+.header__nav-link a {
     text-decoration: none;
     font-size: 14px;
     color: var(--tx-primary-dark);
     font-weight: lighter;
     text-transform: uppercase;
 }
-.header nav ul li a:hover {
+.header__nav-link a:hover {
     color: var(--tx-primary-light);
+}
+
+.header__nav-user {
+    margin-left: 6rem;
+    display: flex;
+    gap: 1rem;
+}
+.header__user-button {
+    height: 100%;
+    padding: 1rem 2.7rem;
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+    font-weight: 300;
+}
+.header__user-button--login {
+    color: var(--tx-black);
+    text-transform: uppercase;
+    background-color: transparent;
+    display: flex;
+    gap: 1rem;
+}
+.header__user-button--register {
+    color: var(--tx-white);
+    text-transform: uppercase;
+    background-color: var(--bg-primary-chocolate);
 }
