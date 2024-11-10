@@ -1,13 +1,16 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .swiper {
     width: 100%;
     height: 500px;
 }
-
+.swiper-wrapper {
+    left: 0px;
+}
 .swiper-slide {
     display: flex;
     width: 100%;
@@ -18,9 +21,18 @@
     height: 100%;
 }
 .swiper-button-prev {
-    padding: 20px 10px;
-    --swiper-navigation-size: 40px;
-    color: black;
+    --swiper-theme-color: #fff;
+    --swiper-navigation-size: 20px;
+    background: #110e0e5b;
+    border-radius: 20px;
+    padding: 20px;
+}
+.swiper-button-next {
+    --swiper-theme-color: #fff;
+    --swiper-navigation-size: 20px;
+    background: #110e0e5b;
+    border-radius: 20px;
+    padding: 20px;
 }
 
 .swiper .swiper-pagination {
